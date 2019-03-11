@@ -88,6 +88,7 @@ module.exports = {
         styleExtractor,
         new CopyWebpackPlugin([ 
             { from: 'src/img', to: 'images',toType:"dir", force: true },
+            { from: 'src/sitemap.xml', to: 'sitemap.xml', toType:"file", force: true },
         ]),
         new HtmlWebpackPlugin({
             template: 'src/index.html',
