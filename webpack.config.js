@@ -15,7 +15,8 @@ var styleExtractor = new ExtractTextPlugin({
 })
 //product charts of the education line 
 var entry1 = [
-    'CommingSoon'
+    'CommingSoon',
+    'managedHosting'
   ];
    // Call our function on our views directory.
 var entryHtmlPlugins = entry1.map(function (entryName) {
