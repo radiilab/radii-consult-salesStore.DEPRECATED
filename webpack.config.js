@@ -17,7 +17,9 @@ var styleExtractor = new ExtractTextPlugin({
 var entry1 = [
     'CommingSoon',
     'managedHosting',
-    'ChatbotAsAService'
+    'ChatbotAsAService',
+    'caasTermsOfService'
+
   ];
    // Call our function on our views directory.
 var entryHtmlPlugins = entry1.map(function (entryName) {
