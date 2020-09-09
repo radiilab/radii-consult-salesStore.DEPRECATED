@@ -17,7 +17,8 @@ var styleExtractor = new ExtractTextPlugin({
 var entry1 = [
     'CommingSoon',
     'managedHosting',
-    'ChatbotAsAService',
+    'ChatbotAsAService_India',
+    'ChatbotAsAService_global'
     'caasTermsOfService'
 
   ];

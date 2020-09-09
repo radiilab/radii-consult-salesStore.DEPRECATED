@@ -28,10 +28,10 @@ img {margin-bottom: -8px;}
     <img class="w3-image" src="/images/chatbot.png" alt="Image 1" style="min-width:500px" width="inherit" height="inherit">
     <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
       <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge">Take photos with our app</h1>
+        <h1 class="w3-xlarge">Supercharge Your Business</h1>
         <hr class="w3-opacity">
-        <p>Super simple installment: free of charge</p>
-        <p><button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-globe"></i></button></p>
+        <p>Get your super salesman now</p>
+        <p><button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'">Buy Now <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-globe"></i></button></p>
         <p>
                       
         </p>
@@ -45,7 +45,7 @@ img {margin-bottom: -8px;}
         <h1 class="w3-xlarge w3-text-red"><b>CLICK!</b> Fast and Easy</h1>
         <hr class="w3-opacity">
         <p>Choose from thousands of features</p>
-        <p><button class="w3-button w3-block w3-red w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-globe"></i></button></p>
+        <p><button class="w3-button w3-block w3-red w3-round" onclick="document.getElementById('download').style.display='block'">Buy Now <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-globe"></i></button></p>
       </div>
     </div>
   </div>
@@ -55,8 +55,8 @@ img {margin-bottom: -8px;}
       <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
         <h1 class="w3-xlarge">Smart Design</h1>
         <hr class="w3-opacity">
-        <p>Customize photos as you go</p>
-        <p><button class="w3-button w3-block w3-indigo w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-globe"></i></button></p>
+        <p>Customize for Mobile(Android, iOS) or Web</p>
+        <p><button class="w3-button w3-block w3-indigo w3-round" onclick="document.getElementById('download').style.display='block'">Buy Now <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-globe"></i></button></p>
       </div>
     </div>
   </div>
@@ -273,6 +273,17 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
 
+   $.get("http://ipinfo.io", function (response) {
+    $("#ip").html("IP: " + response.ip);
+    $("#address").html("Location: " + response.city + ", " + response.region);
+    $("#details").html(JSON.stringify(response, null, 4));
+    if(response.country == "IN"){
+      window.location.replace('https://stackoverflow.com/questions/4744751/how-do-i-redirect-with-javascript');
+    }
+}, "jsonp");
+</script> 
 </body>
 </html>
