@@ -276,14 +276,15 @@ function showDivs(n) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 
-   $.get("http://ipinfo.io", function (response) {
-    $("#ip").html("IP: " + response.ip);
-    $("#address").html("Location: " + response.city + ", " + response.region);
-    $("#details").html(JSON.stringify(response, null, 4));
-    if(response.country == "IN"){
-      window.location.replace('https://stackoverflow.com/questions/4744751/how-do-i-redirect-with-javascript');
-    }
-}, "jsonp");
+  $.get("https://ipinfo.io", function (response) {
+   // $("#ip").html("IP: " + response.ip);
+   // $("#address").html("Location: " + response.city + ", " + response.region);
+   // $("#details").html(JSON.stringify(response, null, 4));
+   if(response.country != "IN"){
+     console.log('you are from India ---redirecting');
+     window.location.replace('ChatbotAsAService_global.html');
+   }
+}, "jsonp"); 
 </script> 
 </body>
 </html>

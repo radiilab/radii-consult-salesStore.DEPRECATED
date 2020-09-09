@@ -5,6 +5,19 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "headers": [ {
+      "source": "**/*.@(html|htm)",
+      "headers": [ {
+        "key": "Access-Control-Allow-Origin",
+        "value": "*"
+      } ]
+    }
+  ],
+    "cleanUrls": true,
+
+    "trailingSlash": false,
+
+    "appAssociation": "AUTO"
   }
 }

@@ -18,7 +18,7 @@ var entry1 = [
     'CommingSoon',
     'managedHosting',
     'ChatbotAsAService_India',
-    'ChatbotAsAService_global'
+    'ChatbotAsAService_global',
     'caasTermsOfService'
 
   ];
