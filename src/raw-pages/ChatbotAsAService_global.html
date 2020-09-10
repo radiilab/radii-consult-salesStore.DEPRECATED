@@ -148,12 +148,17 @@ img {margin-bottom: -8px;}
       <div class="w3-panel w3-pale-yellow">
         <h3 class="w3-wide">Need Something Else ?</h3>
       </div>
+      <form id="queryForm" class="w3-container">
+        <div class="alert">Your message has been sent</div>
+        <label>Your Name</label>
+        <input id="name" class="w3-input" placeholder="Please spell your name" type="text" required>
+        <label>Email</label>
+        <input id="mail" class="w3-input" placeholder="we shall get back to you in this mail" type="email" required>
+        <label>Query</label>
+        <textarea id="query" class="w3-input" style="width: 100%" rows="4" placeholder="Put your Query Here"></textarea>
+        <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Submit Query</button>
+        </form>
       
-      <p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter e-mail"><br/>
-        <textarea style="width: 100%" rows="4" placeholder="Put your Query Here"></textarea>
-      </p>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Submit Query</button>
     </div>
   </div>
 </div>
