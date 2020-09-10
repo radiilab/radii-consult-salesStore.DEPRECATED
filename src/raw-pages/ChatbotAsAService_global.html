@@ -126,7 +126,7 @@ img {margin-bottom: -8px;}
 <div class="callout">
   <div class="callout-header">Goto casts</div>
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
-  <div class="callout-notify" style="display: none">
+  <div class="callout-container" id="callout-notify" style="display: none">
     <p id="callout-notification">Some text to describe the callout message. <a href="#">Learn more</a> or close it if it is in your way.</p>
   </div>
 </div>
@@ -326,10 +326,10 @@ function showDivs(n) {
       // display callout container and redirect after 4 sec
       
       $("callout-notification").html('redirecting to your country location in 4 sec ...');
-      $("callout-notify").css("display","block");
+      document.getElementById("callout-notify").style.display="block";
       console.log('you are from India ---redirecting');
       window.setTimeout(function() {
-        window.location.replace = 'ChatbotAsAService_India.html';
+        window.location.replace('ChatbotAsAService_India.html');
       }, 4000);
     }
 }, "jsonp");
