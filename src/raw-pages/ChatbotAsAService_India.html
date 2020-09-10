@@ -121,7 +121,13 @@ img {margin-bottom: -8px;}
     </div>
   </div>
 </div>
-
+<!-- Callout-->
+<div class="callout">
+  <div class="callout-header">Goto casts</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container" id="callout-notify" style="display: none">
+  </div>
+</div>
 <!-- Modal -->
 <div id="download" class="w3-modal w3-animate-opacity">
   <div class="w3-modal-content" style="padding:32px">
@@ -309,15 +315,21 @@ function showDivs(n) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 
-  $.get("https://ipinfo.io", function (response) {
-   // $("#ip").html("IP: " + response.ip);
-   // $("#address").html("Location: " + response.city + ", " + response.region);
-   // $("#details").html(JSON.stringify(response, null, 4));
-   if(response.country != "IN"){
-     console.log('you are from India ---redirecting');
-     window.location.replace('ChatbotAsAService_global.html');
-   }
-}, "jsonp"); 
+$.get("https://ipinfo.io", function (response) {
+    // $("#ip").html("IP: " + response.ip);
+    // $("#address").html("Location: " + response.city + ", " + response.region);
+    // $("#details").html(JSON.stringify(response, null, 4));
+    if(response.country != "IN"){
+      // display callout container and redirect after 4 sec
+      document.getElementById("callout-notify").style.display="block";
+      $("#callout-notify").html('<p>Redicting to your country in 4 seconds</p>');
+      
+      console.log('you are from India ---redirecting');
+      window.setTimeout(function() {
+        window.location.replace('ChatbotAsAService_global.html');
+      }, 4000);
+    }
+}, "jsonp");
 </script> 
 </body>
 </html>
