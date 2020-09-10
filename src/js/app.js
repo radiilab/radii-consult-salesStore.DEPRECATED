@@ -30,14 +30,12 @@ function submitQueryForm(e){
     e.preventDefault();
   
     // Get values
-    var name = getInputVal('name');
-    var company = getInputVal('company');
-    var email = getInputVal('email');
-    var phone = getInputVal('phone');
-    var message = getInputVal('message');
+    var name = getInputVal('query_man');
+    var email = getInputVal('query_mail');
+    var message = getInputVal('query_data');
   
     // Save message
-    saveMessage(name, company, email, phone, message);
+    saveMessage(name,  email, message);
   
     // Show alert
     document.querySelector('.alert').style.display = 'block';
@@ -57,7 +55,7 @@ function submitQueryForm(e){
   }
   
   // Save message to firebase
-  function saveMessage(name, company, email, phone, message){
+  function saveMessage(name, email, message){
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
       name: name,
