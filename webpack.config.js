@@ -16,10 +16,12 @@ var styleExtractor = new ExtractTextPlugin({
 //product charts of the education line 
 var entry1 = [
     'CommingSoon',
-    'managedHosting',
+    'managedMSME',
     'ChatbotAsAService_India',
     'ChatbotAsAService_global',
-    'caasTermsOfService'
+    'caasTermsOfService',
+    'ExamSystemAsService',
+    'learningMangementSystem'
 
   ];
    // Call our function on our views directory.
