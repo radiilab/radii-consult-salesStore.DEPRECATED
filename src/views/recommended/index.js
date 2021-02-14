@@ -8,7 +8,7 @@ import useDocumentTitle from 'hooks/useDocumentTitle';
 import useScrollTop from 'hooks/useScrollTop';
 
 const RecommendedProducts = () => {
-    useDocumentTitle('Recommended Products | Salinaka');
+    useDocumentTitle('Recommended Products | Trinetra');
     useScrollTop();
 
     const {

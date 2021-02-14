@@ -17,7 +17,7 @@ const Footer = () => {
 	return hiddenFooterPaths.includes(pathname) ? null : (
 		<footer className="footer">
 			<div className="footer-col-1">
-				<strong><span>Developed by <a href="https://github.com/jgudo">JULIUS GUEVARRA</a></span></strong>
+				<strong><span>Developed and maintained by <a href="https://radii.in/">Radii Corporation</a></span></strong>
 			</div>
 			<div className="footer-col-2">
 				<img className="footer-logo" src={logo} />
@@ -26,8 +26,8 @@ const Footer = () => {
 			<div className="footer-col-3">
 				<strong>
 					<span>
-						Fork this project &nbsp;
-            <a href="https://github.com/jgudo/ecommerce-react">HERE</a>
+						More recent advancements &nbsp;
+            <a href="https://blog.radii.in/">here.</a>
 					</span>
 				</strong>
 			</div>

@@ -24,7 +24,7 @@ const Navigation = (props) => {
 				<div className="mobile-navigation-logo">
 					<Link onClick={onClickLink} to={HOME}>
 						{/* <img src={logo} style={{ width: '150px', height: 'inherit', objectFit: 'contain' }} /> */}
-						<h2>SALINAKA</h2>
+						<h2>TRINETRA</h2>
 					</Link>
 				</div>
 

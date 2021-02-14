@@ -9,7 +9,7 @@ import ProductForm from '../components/ProductForm';
 
 const AddProduct = () => {
 	useScrollTop();
-	useDocumentTitle('Add New Product | Salinaka');
+	useDocumentTitle('Add New Product | Trinetra');
 	const isLoading = useSelector(state => state.app.loading);
 	const dispatch = useDispatch();
 

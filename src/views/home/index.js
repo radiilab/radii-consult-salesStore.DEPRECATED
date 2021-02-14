@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import bannerImg from 'images/banner-girl.png';
+import bannerImg from 'images/banner-services.png';
 
 import { FEATURED_PRODUCTS, RECOMMENDED_PRODUCTS, SHOP } from 'constants/routes';
 import MessageDisplay from 'components/ui/MessageDisplay';
@@ -11,7 +11,7 @@ import useDocumentTitle from 'hooks/useDocumentTitle';
 import useScrollTop from 'hooks/useScrollTop';
 
 const Home = () => {
-	useDocumentTitle('Salinaka | Home');
+	useDocumentTitle('Trinetra | Home');
 	useScrollTop();
 
 	const {
