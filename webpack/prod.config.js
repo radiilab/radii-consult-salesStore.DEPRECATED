@@ -67,13 +67,23 @@ module.exports = merge(baseConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'auto'
     }),
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, '../static'),
-        to: 'static',
-        ignore: ['.*']
-      }
-    ]),
+    new CopyWebpackPlugin(
+    {
+      patterns: [
+        {
+          from: path.resolve(__dirname, '../static'),
+          to: 'static',
+          globOptions: {
+            ignore: [
+              '.*',
+            ],
+          },
+        }
+        
+      ]
+        
+    }
+    ),
     new webpack.DefinePlugin({
       'process.env.FIREBASE_API_KEY': JSON.stringify(process.env.FIREBASE_API_KEY),
       'process.env.FIREBASE_AUTH_DOMAIN': JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN),
